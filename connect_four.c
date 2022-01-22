@@ -1,8 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <termios.h>
-
-#include "getch.h"
+#include "connect_four.h"
 
 #define RED     "\x1b[31m"
 #define GREEN   "\x1b[32m"
@@ -12,7 +8,6 @@
 #define CYAN    "\x1b[36m"
 #define RESET   "\x1b[0m"
 
-int rows, cols;
 int current_token_pos = 0; // GLOBAL VARIABLE TO KEEP TRACK OF TOKEN COLUMN
 
 void print_game(int game_board[rows][cols], int piece) {
